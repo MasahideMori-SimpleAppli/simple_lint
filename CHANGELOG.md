@@ -1,3 +1,7 @@
+## 0.0.3
+
+* Corrected the location of lint.
+
 ## 0.0.2
 
 * Added example.

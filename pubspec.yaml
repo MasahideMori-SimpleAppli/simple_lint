@@ -1,6 +1,6 @@
 name: simple_lint
 description: "A simple lint for flutter that warns you about risky code."
-version: 0.0.2
+version: 0.0.3
 repository: https://github.com/MasahideMori-SimpleAppli/simple_lint
 
 environment:
@@ -10,8 +10,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  flutter_lints: ^6.0.0
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints: ^6.0.0

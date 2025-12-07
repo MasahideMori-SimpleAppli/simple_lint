@@ -1,3 +1,7 @@
+## 1.0.0
+
+* Updated as a major version.
+
 ## 0.0.3
 
 * Corrected the location of lint.

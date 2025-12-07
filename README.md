@@ -2,11 +2,15 @@
 
 ## Overview
 
-This package provides a lightweight lint rule set based on **flutter_lints**,
-with an additional rule that enforces **package-level imports**.  
-This helps prevent accidental instance duplication that can occur when files
-are imported using inconsistent relative paths, ensuring that shared objects
-behave as intended.
+**simple_lint** provides a lightweight lint rule set based on **flutter_lints**,  
+with two additional rules focused on enforcing consistent import styles:
+
+- `always_use_package_imports: true`
+- `prefer_relative_imports: false`
+
+Together, these prevent subtle instance-duplication bugs that can occur when  
+the same file is imported using a mix of package imports and relative paths —  
+a common cause of unexpected “singleton breakage” in Dart/Flutter projects.
 
 ## Usage
 
@@ -14,10 +18,10 @@ behave as intended.
 
 ```yaml
 dev_dependencies:
-  simple_lint: ^0.0.1
+  simple_lint: ^1.0.0
 ```
 
-2. In your project's **analysis_options.yaml**, include the lint rules provided by this package:
+2. In your project's analysis_options.yaml, include the lint rules:
 
 ```yaml
 include: package:simple_lint/simple_lint.yaml
@@ -25,9 +29,29 @@ include: package:simple_lint/simple_lint.yaml
 
 That's all — the lint rules will be applied automatically.
 
+
+## Lint Rules Included
+
+```yaml
+include: package:flutter_lints/flutter.yaml
+
+linter:
+rules:
+always_use_package_imports: true
+prefer_relative_imports: false
+
+analyzer:
+exclude:
+- build/**
+- test/**
+```
+
+These rules ensure consistent package-level imports and help avoid
+accidental duplication of objects across different import paths.
+
 ## Support
 
-There is currently no support.
+No official support is provided at the moment.
 
 ## About version control
 
@@ -43,7 +67,8 @@ The C part will be changed at the time of version upgrade.
 
 ## License
 
-This software is released under the BSD 3-Clause License, see LICENSE file.
+This software is released under the BSD 3-Clause License.
+See the LICENSE file for details.
 
 ## Trademarks
 

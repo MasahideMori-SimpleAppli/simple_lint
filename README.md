@@ -57,7 +57,7 @@ No official support is provided at the moment.
 
 Versioning follows this pattern:
 
- - C.X.X — Breaking changes (e.g., modifications that prevent compatibility with previous versions)
+- C.X.X — Breaking changes (e.g., modifications that prevent compatibility with previous versions)
 - X.C.X — Additive, non-breaking updates (e.g., new rules or features)
 - X.X.C — Minor adjustments, documentation changes, and bug fixes
 

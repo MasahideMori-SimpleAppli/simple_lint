@@ -53,17 +53,13 @@ accidental duplication of objects across different import paths.
 
 No official support is provided at the moment.
 
-## About version control
+## Versioning Policy
 
-The C part will be changed at the time of version upgrade.
+Versioning follows this pattern:
 
-- Changes such as adding variables, structure change that cause problems when reading previous
-  files.
-    - C.X.X
-- Adding methods, etc.
-    - X.C.X
-- Minor changes and bug fixes.
-    - X.X.C
+ - C.X.X — Breaking changes (e.g., modifications that prevent compatibility with previous versions)
+- X.C.X — Additive, non-breaking updates (e.g., new rules or features)
+- X.X.C — Minor adjustments, documentation changes, and bug fixes
 
 ## License
 

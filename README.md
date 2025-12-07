@@ -36,14 +36,14 @@ That's all — the lint rules will be applied automatically.
 include: package:flutter_lints/flutter.yaml
 
 linter:
-rules:
-always_use_package_imports: true
-prefer_relative_imports: false
+  rules:
+    always_use_package_imports: true
+    prefer_relative_imports: false
 
 analyzer:
-exclude:
-- build/**
-- test/**
+  exclude:
+    - build/**
+    - test/**
 ```
 
 These rules ensure consistent package-level imports and help avoid

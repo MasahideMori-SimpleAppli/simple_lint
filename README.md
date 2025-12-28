@@ -18,7 +18,7 @@ a common cause of unexpected “singleton breakage” in Dart/Flutter projects.
 
 ```yaml
 dev_dependencies:
-  simple_lint: ^1.0.0
+  simple_lint: ^2.0.0
 ```
 
 2. In your project's analysis_options.yaml, include the lint rules:
@@ -43,7 +43,6 @@ linter:
 analyzer:
   exclude:
     - build/**
-    - test/**
 ```
 
 These rules ensure consistent package-level imports and help avoid

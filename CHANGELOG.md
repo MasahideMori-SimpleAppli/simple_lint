@@ -1,3 +1,7 @@
+## 2.0.0
+### Breaking changes
+* `test/**` is no longer excluded from analyzer targets.
+
 ## 1.0.0
 
 * Updated as a major version.
